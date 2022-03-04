@@ -2,19 +2,26 @@
   <div class="accueil">
     <h1>Accueil</h1>
   </div>
+  <div class="background">
+    </div>
 </template>
 
 <script>
 export default {
   name: 'HelloWorld',
   props: {
-    msg: String
-  }
+    msg: String,
+  },
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+.background {
+/*   C'est moche, à bosser*/
+height: 500px;
+}
 h3 {
   margin: 40px 0 0;
 }
