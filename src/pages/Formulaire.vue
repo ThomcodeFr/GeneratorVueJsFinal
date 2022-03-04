@@ -1,17 +1,18 @@
 <template>
   <Presentation v-if="formContent == 'presentation'" />
-  <Experience v-if="formContent == 'experience'" />
+  <Experience v-if="formContent == 'experiences'" />
   <Formations v-if="formContent == 'formations'" />
   <Competences v-if="formContent == 'competences'" />
 </template>
 
 <script>
-import Presentation from '../elementForm/presentation.vue'
+import Presentation from '../elementForm/presentationForm.vue'
 import Experience from '../elementForm/experiences.vue'
 import Formations from '../elementForm/formations.vue'
 import Competences from '../elementForm/competences.vue'
-import { mapState } from 'vuex';
-
+import { mapState } from 'vuex'
+/* import { watch } from '@vue/runtime-core'
+ */
 
 export default {
   name: 'App',
@@ -23,6 +24,13 @@ export default {
     Competences,
   },
 
+// C'est ce qu'il va router en premier
+  data() {
+    return {
+      formContent: 'presentation',
+    }
+  },
+
   computed: {
     ...mapState(['presentation']),
     ...mapState(['experiences']),
@@ -30,18 +38,13 @@ export default {
     ...mapState(['competences']),
   },
 
-  methods: {
-    // si contenu vide alors alert complete sinon mapstate experience
-    // si présentation complet -> par le biais watch il va mapstate expérience
+  watch: {
+    presentation: function (nouvellePresentation) {
+      if (nouvellePresentation != '') {
+        this.formContent = 'experiences'
+      }
     },
-
-  data() {
-    return {
-      formContent: 'presentation',
-    }
   },
-
-
 }
 </script>
 

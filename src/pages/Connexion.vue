@@ -2,9 +2,18 @@
   <div class="connexion">
     <div class="background">
       <h1>Connexion</h1>
-      <input v-model="pseudo" />
-      <input type="password" v-model="password" />
-      <button @click="saveConnexion">Connexion</button>
+      <section class="affichageConnexion">
+        <input v-model="pseudo" placeholder="Entrez votre pseudo" /> <br />
+        <br />
+        <input
+          type="password"
+          v-model="password"
+          placeholder="Entrez votre mot de passe"
+        />
+        <br />
+        <br />
+        <button @click="saveConnexion">Connexion</button>
+      </section>
     </div>
   </div>
 </template>
@@ -16,7 +25,7 @@ export default {
   data: function () {
     return {
       pseudo: '',
-      pseudojuste: 'plop',
+      pseudojuste: 'p',
       password: '',
     }
   },
@@ -39,7 +48,12 @@ export default {
   },
 }
 </script>
+
 <style scoped>
+.affichageConnexion {
+  padding: center;
+  margin: center;
+}
 
 .background {
   /*   C'est moche, à bosser*/
@@ -49,5 +63,4 @@ export default {
 h1 {
   color: rgb(193, 162, 109);
 }
-
 </style>
