@@ -18,7 +18,8 @@ export default {
       pseudojuste:"plop",
       password: "",
     }
-  },git remote add origin https://github.com/ThomcodeFr/GeneratorVueJsFinal.git
+  },
+  
   methods: {
     ...mapMutations(["setPseudo"]),
     ...mapMutations(["setPassword"]),
