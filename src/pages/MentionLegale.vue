@@ -37,7 +37,7 @@
       </p>
 
       <h2>PROPRIÉTÉ INTELLECTUELLE</h2>
-
+      <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum vero
       consequatur id quo cupiditate! Ipsam velit ad, quod a impedit nulla quae!
       Ipsum facilis magnam hic, beatae aut consequuntur eligendi voluptatum
@@ -46,9 +46,10 @@
       dolorum, repellat nostrum, vitae labore laudantium odit in? Libero,
       deleniti! Similique aspernatur enim maxime magnam numquam, maiores
       voluptate dolorum.
+      </p>
 
       <h2>LOI APPLICABLE ET COMPÉTENCE JURIDICTIONNELLE</h2>
-
+      <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
       voluptates asperiores officiis libero error rem neque, hic impedit veniam
       sed. Qui, numquam? Consequuntur, deleniti incidunt atque exercitationem
@@ -58,6 +59,7 @@
       vitae! Minus expedita saepe molestias vel natus exercitationem, eaque,
       aut, recusandae sapiente consectetur veritatis rem incidunt? Suscipit modi
       non corrupti soluta libero.
+      </p>
     </section>
   </div>
 </template>
@@ -65,6 +67,7 @@
 <script></script>
 
 <style scoped>
+
 h2 {
   color: rgb(193, 162, 109);
   font-size: 20px;

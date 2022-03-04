@@ -1,16 +1,16 @@
 <template>
   <div>
     <Header />
-      <Master />
-      <button v-on:click="say('accueil')">Accueil</button>
-      <button v-on:click="say('apropos')">A propos</button>
-      <button v-on:click="say('mentionLegale')">Mention Légale</button>
-      <button v-on:click="say('connexion')">Connexion</button>
+    <Master />
+    <button v-on:click="say('accueil')">Accueil</button>
+    <button v-on:click="say('apropos')">A propos</button>
+    <button v-on:click="say('mentionLegale')">Mention Légale</button>
+    <button v-on:click="say('connexion')">Connexion</button>
 
-      <Accueil v-if="pageMenu == 'accueil'" />
-      <Apropos v-if="pageMenu == 'apropos'" />
-      <MentionLegale v-if="pageMenu == 'mentionLegale'" />
-      <Formulaire v-if="pageMenu == 'formulaire'" />
+    <Accueil v-if="pageMenu == 'accueil'" />
+    <Apropos v-if="pageMenu == 'apropos'" />
+    <MentionLegale v-if="pageMenu == 'mentionLegale'" />
+    <Formulaire v-if="pageMenu == 'formulaire'" />
     <Connexion v-if="pageMenu == 'connexion'" />
     <Footer />
   </div>
@@ -70,6 +70,14 @@ export default {
 </script>
 
 <style>
+h1 {
+  color: rgb(193, 162, 109);
+}
+
+h2 {
+  margin-top: 10px;
+}
+
 #app {
   font-family: 'Oswald', sans-serif;
   -webkit-font-smoothing: antialiased;

@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <img id="home-logo" src="@/assets/logo-blue.png" alt="Logo des 8 fantastiques"/>
-    <h2>Générateur de CV</h2>
+    <h1>Générateur de CV</h1>
   </div>
 </template>
 
@@ -15,7 +15,8 @@
 }
 
 #home-logo {
-  width: 25%;
+  width: auto;
+  height: 2rem;
 }
 
 

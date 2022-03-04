@@ -23,8 +23,6 @@
 
 <style>
 h2 {
-  padding: 20px 0 0 15px;
-  text-align: center;
   text-transform: uppercase;
   color: rgb(193, 162, 109);
 }
