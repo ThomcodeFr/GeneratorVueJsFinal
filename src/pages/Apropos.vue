@@ -9,7 +9,7 @@
   </div>
 </template>
 
-<script>git 
+<script>
 import Presentation from '../pages/about/Presentation.vue'
 import Trombi from '../pages/about/Trombi.vue'
 import Localisation from '../pages/about/Localisation.vue'
