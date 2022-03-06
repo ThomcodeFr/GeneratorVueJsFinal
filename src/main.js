@@ -9,6 +9,7 @@ const store = createStore({
       pseudo: '',
       password: '',
       presentation: '',
+      experience: '',
     }
   },
   mutations: {
@@ -23,6 +24,10 @@ const store = createStore({
     setPresentation(state, presentation) {
       console.error('setting presentation', presentation)
       state.presentation = presentation
+    },
+    setExperience(state, experience) {
+      console.error('setting experience', experience)
+      state.experience = experience
     },
   },
 })

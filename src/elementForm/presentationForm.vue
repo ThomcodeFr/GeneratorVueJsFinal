@@ -1,7 +1,7 @@
 <template>
   <div class="presentation">
     <h1>Présentation</h1>
-    <input
+    <textarea
       class="preschamp"
       v-model="presentation"
       placeholder="Décrivez-vous !"

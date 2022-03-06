@@ -8,11 +8,11 @@
     /><br /><br />
 
     <label for="start">Date de début :</label><br />
-    <input v-model="experienceDate" type="date" id="start" /><br /><br />
+    <input v-model="experienceDateStart" type="date" id="start" /><br /><br />
     <label for="start">Date de fin :</label><br />
 
-    <input v-model="experienceDate" type="date" /><br /><br />
-    <input
+    <input v-model="experienceDateEnd" type="date" /><br /><br />
+    <textarea
       v-model="experienceDescrip"
       class="inputDescription"
       placeholder="Entrez la description de vos missions"
@@ -35,12 +35,12 @@ export default {
 
   methods: {
     ...mapMutations(['setExperience']),
-    setExperience() {
-      if (this.experience == '') {
-        alert('Le champs présentation ne peut pas être vide')
+    saveExperience() {
+      if (this.experienceName && this.experienceDate & this.experienceDateStart && this.experienceDateEnd && this.experienceDescrip == '') {
+        alert('Attention, vous devez compléter tous les champs')
       } else {
-        alert('vous avez saisie : ' + this.experience)
-        this.setExperience(this.experience) //envoi dans le state
+        alert('vous avez saisie : ' + this.experienceName + this.experienceDate + this.experienceDateStart + this.experienceDateEnd + this.experienceDescrip)
+        this.setExperience(this.experienceName && this.experienceDate & this.experienceDateStart && this.experienceDateEnd && this.experienceDescrip)
       }
     },
   },
@@ -52,7 +52,7 @@ export default {
 }
 
 .inputDescription {
-  height: 200px;
+  height: 170px;
   width: 400px;
 }
 </style>

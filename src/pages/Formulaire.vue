@@ -44,6 +44,11 @@ export default {
         this.formContent = 'experiences'
       }
     },
+    exprience: function (nouvelleExperience) {
+      if (nouvelleExperience != '') {
+        this.formContent = 'formations'
+      }
+    },
   },
 }
 </script>
