@@ -89,4 +89,10 @@ h2 {
   background: url('./assets/network.jpg');
   max-height: auto;
 }
+
+#footer p{
+  color: black;
+  text-align: center;
+}
+
 </style>

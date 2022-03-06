@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h2>Notre équipe</h2>
-
     <div class="presentation">
+      <h2>Notre équipe</h2>
+
       <h3 class="title-font">Nous sommes 8 fantastiques développeurs.e.s.</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quos
@@ -22,17 +22,23 @@
 <script></script>
 
 <style>
-h2 {
+
+.presentation {
+  padding: 20px;
+}
+
+.presentation h2 {
   text-transform: uppercase;
   color: rgb(193, 162, 109);
 }
 
-h3 {
+
+.presentation h3 {
   color: #fff;
   padding-left: 15px;
 }
 
-p {
+.presentation p {
   color: #fff;
   padding: 0 30px 0 30px;
   text-align: justify;
