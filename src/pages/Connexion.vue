@@ -1,8 +1,8 @@
 <template>
-  <div class="connexion">
-    <div class="background">
       <h1>Connexion</h1>
-      <section class="affichageConnexion">
+
+  <section id="connexionStyle">
+    <div class="background">
         <input v-model="pseudo" placeholder="Entrez votre pseudo" /> <br />
         <br />
         <input
@@ -13,9 +13,8 @@
         <br />
         <br />
         <button @click="saveConnexion">Connexion</button>
-      </section>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -50,10 +49,6 @@ export default {
 </script>
 
 <style scoped>
-.affichageConnexion {
-  padding: center;
-  margin: center;
-}
 
 .background {
   /*   C'est moche, à bosser*/

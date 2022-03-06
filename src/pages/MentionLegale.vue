@@ -4,7 +4,7 @@
   </div>
 
   <div class="background">
-    <section>
+    <section id="mentionLegalStyle">
       <h2>PUBLICATION DU SITE</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus saepe
@@ -67,9 +67,16 @@
 <script></script>
 
 <style scoped>
+#mentionLegalStyle {
+  padding: 20px;
+}
 
-h2 {
+#mentionLegalStyle h2 {
   color: rgb(193, 162, 109);
   font-size: 20px;
+}
+
+#mentionLegalStyle p {
+  color: #fff;
 }
 </style>

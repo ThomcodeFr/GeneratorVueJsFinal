@@ -1,4 +1,5 @@
 <template>
+  <h1>A Propos</h1>
   <div id="app">
     <div class="background">
       <Presentation />
@@ -8,17 +9,17 @@
   </div>
 </template>
 
-<script>
+<script>git 
 import Presentation from '../pages/about/Presentation.vue'
 import Trombi from '../pages/about/Trombi.vue'
-import  Localisation from '../pages/about/Localisation.vue'
+import Localisation from '../pages/about/Localisation.vue'
 
 export default {
   name: 'App',
   components: {
     Presentation,
     Trombi,
-    Localisation
+    Localisation,
   },
 }
 </script>
@@ -76,5 +77,4 @@ export default {
     height: auto;
   }
 }
-
 </style>
