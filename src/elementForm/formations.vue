@@ -1,8 +1,7 @@
 <template>
   <div class="formulaire">
-    <h1>Formulaire</h1>
+    <h1>Formation</h1>
     <div>
-      <h2>Formation</h2>
       <p>Nom de la formation</p>
       <!--  le v-model, grace au input modifie la valeur dans la data-->
       <input v-model="formationTabsNews.nomFormation" />

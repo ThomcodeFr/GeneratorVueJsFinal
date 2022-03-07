@@ -29,21 +29,41 @@ export default {
   name: 'experienceForm',
   data: function () {
     return {
-      experienceName: '',
-      experienceDateStart: '',
-      experienceDateEnd: '',
-      experienceDescrip: '',
+      experienceChamps: [
+        {
+          experienceName: '',
+          experienceDateStart: '',
+          experienceDateEnd: '',
+          experienceDescrip: '',
+        },
+      ],
     }
   },
 
   methods: {
-    ...mapMutations(['setExperience']),
+    ...mapMutations(['setExperiences']),
     saveExperience() {
-      if (!(this.experienceName)  && !(this.experienceDateStart) && !(this.experienceDateEnd) && !(this.experienceDescrip)) {
+      if (
+        !this.experienceName &&
+        !this.experienceDateStart &&
+        !this.experienceDateEnd &&
+        !this.experienceDescrip
+      ) {
         alert('Attention, vous devez compléter tous les champs')
       } else {
-        alert('vous avez saisie : ' + this.experienceName + this.experienceDateStart + this.experienceDateEnd + this.experienceDescrip)
-        this.setExperience(this.experienceName && this.experienceDateStart && this.experienceDateEnd && this.experienceDescrip)
+        alert(
+          'vous avez saisie : ' +
+            this.experienceName +
+            this.experienceDateStart +
+            this.experienceDateEnd +
+            this.experienceDescrip
+        )
+        this.setExperiences(
+          this.experienceName &&
+            this.experienceDateStart &&
+            this.experienceDateEnd &&
+            this.experienceDescrip
+        )
       }
     },
   },

@@ -33,7 +33,7 @@ export default {
 
   computed: {
     ...mapState(['presentation']),
-    ...mapState(['experiences']),
+    ...mapState(['experienceChamps']),
     ...mapState(['formations']),
     ...mapState(['competences']),
   },
@@ -44,7 +44,7 @@ export default {
         this.formContent = 'experiences'
       }
     },
-    exprience: function (nouvelleExperience) {
+    experienceChamps: function (nouvelleExperience) {
       if (nouvelleExperience != '') {
         this.formContent = 'formations'
       }
