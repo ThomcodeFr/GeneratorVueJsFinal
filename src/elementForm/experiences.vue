@@ -36,11 +36,11 @@ export default {
   methods: {
     ...mapMutations(['setExperience']),
     saveExperience() {
-      if (this.experienceName && this.experienceDate & this.experienceDateStart && this.experienceDateEnd && this.experienceDescrip == '') {
+      if (this.experienceName && this.experienceDateStart && this.experienceDateEnd && this.experienceDescrip == '') {
         alert('Attention, vous devez compléter tous les champs')
       } else {
-        alert('vous avez saisie : ' + this.experienceName + this.experienceDate + this.experienceDateStart + this.experienceDateEnd + this.experienceDescrip)
-        this.setExperience(this.experienceName && this.experienceDate & this.experienceDateStart && this.experienceDateEnd && this.experienceDescrip)
+        alert('vous avez saisie : ' + this.experienceName + this.experienceDateStart + this.experienceDateEnd + this.experienceDescrip)
+        this.setExperience(this.experienceName && this.experienceDateStart && this.experienceDateEnd && this.experienceDescrip)
       }
     },
   },
