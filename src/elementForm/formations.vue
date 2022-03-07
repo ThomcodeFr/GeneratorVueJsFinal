@@ -2,17 +2,18 @@
   <div class="formulaire">
     <h1>Formation</h1>
     <div>
-      <p>Nom de la formation</p>
-      <!--  le v-model, grace au input modifie la valeur dans la data-->
-      <input v-model="formationTabsNews.nomFormation" />
-      <br />
-      <p>Date de début</p>
-      <input v-model="formationTabsNews.dateDebutFormation" />
-      <br />
-      <p>Date de fin</p>
-      <input v-model="formationTabsNews.dateFinFormation" />
-      <br />
-      <button @click="saveFormation()">Enregistrer</button>
+          <input
+      v-model="formationTabsNews.nomFormation"
+      class="inputExperienceName"
+      placeholder="Entrez le nom de la formation"
+    /><br /><br>
+      <label for="start">Date de début :</label><br />
+      <input id="start" v-model="formationTabsNews.dateDebutFormation" type="date"/>
+      <br /> <br>
+      <label for="start">Date de fin</label><br />
+      <input v-model="formationTabsNews.dateFinFormation" type="date"/>
+      <br /> <br>
+      <button @click="saveFormation()">Suivant</button>
     </div>
     <table>
       <thead>
@@ -54,7 +55,7 @@ export default {
   methods: {
     saveFormation: function () {
       this.formationTabs.push(this.formationTabsNews)
-      alert('vous avez une nouvelle formation',this.formationTabs)
+      alert('vous avez une nouvelle formation', this.formationTabs)
     },
   },
 }
