@@ -23,7 +23,7 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-### Exercice de soutien
+### Exercice
 
 1. Compléter les différentes pages pour faire des rendu sympa
 2. Faire de chouette formulaire pour remplir les expériences et formations ... un formulaire pour chaque expérience et faire ajouter chacune d'entres elle à un tableau
