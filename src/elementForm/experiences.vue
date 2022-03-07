@@ -29,14 +29,17 @@ export default {
   name: 'experienceForm',
   data: function () {
     return {
-      experience: '',
+      experienceName: '',
+      experienceDateStart: '',
+      experienceDateEnd: '',
+      experienceDescrip: '',
     }
   },
 
   methods: {
     ...mapMutations(['setExperience']),
     saveExperience() {
-      if (this.experienceName && this.experienceDateStart && this.experienceDateEnd && this.experienceDescrip == '') {
+      if (!(this.experienceName)  && !(this.experienceDateStart) && !(this.experienceDateEnd) && !(this.experienceDescrip)) {
         alert('Attention, vous devez compléter tous les champs')
       } else {
         alert('vous avez saisie : ' + this.experienceName + this.experienceDateStart + this.experienceDateEnd + this.experienceDescrip)
