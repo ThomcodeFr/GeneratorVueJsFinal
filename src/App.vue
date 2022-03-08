@@ -1,7 +1,11 @@
 <template>
   <div>
+    <!-- <header /> est un component, cela peut être un template ou une fonctionnalité ou les deux -->
+    <!-- App gère le routage -->
     <Header />
     <Master />
+    <!-- Au clic tu dois lancer la fonction say , avec à l'intérieur le mot : accueil (qui contient un message) -->
+    <!-- say = méthod, quand c'est du calcul c'est computed -->
     <button v-on:click="say('accueil')">Accueil</button>
     <button v-on:click="say('apropos')">A propos</button>
     <button v-on:click="say('mentionLegale')">Mention Légale</button>
@@ -27,6 +31,8 @@ import Footer from './template/Footer'
 import Formulaire from './pages/Formulaire'
 import { mapState } from 'vuex'
 
+// export default contient tout le fonctionnement de la partie script
+// components est important, car au sein d'un même fichier on peut avoir plusieurs compenents différents
 export default {
   name: 'App',
   components: {
@@ -53,6 +59,7 @@ export default {
 
   methods: {
     say: function (message) {
+      //this -> C'est une variable définie dans cet espace du code
       this.pageMenu = message
     },
   },
@@ -90,9 +97,8 @@ h2 {
   max-height: auto;
 }
 
-#footer p{
+#footer p {
   color: black;
   text-align: center;
 }
-
 </style>

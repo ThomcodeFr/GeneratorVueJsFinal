@@ -13,7 +13,7 @@
       <label for="start">Date de fin</label><br />
       <input v-model="formationTabsNews.dateFinFormation" type="date"/>
       <br /> <br>
-      <button @click="saveFormation()">Suivant</button>
+      <button @click="saveFormation()">ajouter</button>
     </div>
     <table>
       <thead>

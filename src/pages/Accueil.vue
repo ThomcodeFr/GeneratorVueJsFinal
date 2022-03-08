@@ -2,13 +2,13 @@
   <div class="accueil">
     <h1>Accueil</h1>
   </div>
-  <div class="background">
-    </div>
+  <div class="background"></div>
 </template>
 
 <script>
 export default {
   name: 'HelloWorld',
+  // Props : si on prends les paramètres de App pour l'afficher dans un components (alors que normalement c'est l'inverse)
   props: {
     msg: String,
   },
@@ -17,10 +17,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
 .background {
-/*   C'est moche, à bosser*/
-height: 500px;
+  /*   C'est moche, à bosser*/
+  height: 500px;
 }
 h3 {
   margin: 40px 0 0;

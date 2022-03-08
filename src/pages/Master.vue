@@ -1,24 +1,22 @@
 <template>
   <div>
-
-<!--     <h2> Bonjour {{ pseudo }} !</h2>
+    <!--     <h2> Bonjour {{ pseudo }} !</h2>
     <h2> Pour rappel, votre mdp est {{ password }} !</h2> -->
-
-
+    <!--  {{ variable }} ce qui s'affiche entre moustaches c'est la variable -->
   </div>
-
 </template>
 
 <script>
-import { mapState } from 'vuex';
+// mapState récupère la donnée pseudo qui est dans le store 
+import { mapState } from 'vuex'
 
 export default {
   name: 'Master',
 
   computed: {
-    ...mapState(["pseudo"]),
-    ...mapState(["password"])
-  }
+    ...mapState(['pseudo']),
+    ...mapState(['password']),
+  },
 }
 </script>
 

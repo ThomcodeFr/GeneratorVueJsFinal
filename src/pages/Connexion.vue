@@ -1,24 +1,26 @@
 <template>
-      <h1>Connexion</h1>
+  <h1>Connexion</h1>
 
   <section id="connexionStyle">
     <div class="background">
-        <input v-model="pseudo" placeholder="Entrez votre pseudo" /> <br />
-        <br />
-        <input
-          type="password"
-          v-model="password"
-          placeholder="Entrez votre mot de passe"
-        />
-        <br />
-        <br />
-        <button @click="saveConnexion">Connexion</button>
+      <input v-model="pseudo" placeholder="Entrez votre pseudo" /> <br />
+      <br />
+      <input
+        type="password"
+        v-model="password"
+        placeholder="Entrez votre mot de passe"
+      />
+      <br />
+      <br />
+      <button @click="saveConnexion">Connexion</button>
     </div>
   </section>
 </template>
 
 <script>
 import { mapMutations } from 'vuex'
+//mapMutations = permet de crer une mutation des datas dans le store, comme c'est une constante, je ne peux pas la modifier sans mutation
+
 export default {
   name: 'ConnexionForm',
   data: function () {
@@ -30,6 +32,7 @@ export default {
   },
 
   methods: {
+    //pour muter, il faut rajouter set.
     ...mapMutations(['setPseudo']),
     ...mapMutations(['setPassword']),
     saveConnexion() {
@@ -49,7 +52,6 @@ export default {
 </script>
 
 <style scoped>
-
 .background {
   /*   C'est moche, à bosser*/
   height: 500px;
