@@ -1,9 +1,20 @@
 <template>
   <div class="presentation">
     <h1>Présentation</h1>
+    <input
+      v-model="presentationFirstName"
+      class="inputPresentationFirstName"
+      placeholder="Entrez votre prénom "
+    /><br /><br />
+    <input
+      v-model="presentationLastName"
+      class="inputPresentationLastName"
+      placeholder="Entrez votre nom de famille"
+    /><br /><br />
+
     <textarea
       class="preschamp"
-      v-model="presentation"
+      v-model="presentationDescrip"
       placeholder="Décrivez-vous !"
     />
     <br />
@@ -19,18 +30,28 @@ export default {
   name: 'presentationForm',
   data: function () {
     return {
-      presentation: '',
+      presentationChamps: [
+        {
+          presentationFirstName: '',
+          presentationLastName: '',
+          presentationDescrip: '',
+        },
+      ],
     }
   },
 
   methods: {
     ...mapMutations(['setPresentation']),
     nextPresentation() {
-      if (this.presentation == '') {
-        alert('Le champs présentation ne peut pas être vide')
+      if (
+        !this.presentationFirstName &&
+        !this.presentationLastName &&
+        !this.presentationDescrip
+      ) {
+        alert('Attention, vous devez compléter tous les champs')
       } else {
-        alert('vous avez saisie : ' + this.presentation)
-        this.setPresentation(this.presentation) //envoi dans le state
+        alert('vous avez saisie : ' + this.presentationFirstName + this.presentationLastName +  this.presentationDescrip)
+        this.setPresentation(this.presentationFirstName + this.presentationLastName + this.presentationDescrip) //envoi dans le state
       }
 
       // si présentation complet -> par le biais watch il va mapstate expérience

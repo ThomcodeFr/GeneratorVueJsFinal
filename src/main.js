@@ -8,7 +8,7 @@ const store = createStore({
     return {
       pseudo: '',
       password: '',
-      presentation: '',
+      presentationChamps: '',
       experienceChamps: '',
     }
   },
@@ -22,9 +22,9 @@ const store = createStore({
       console.error('setting password', password)
       state.password = password
     },
-    setPresentation(state, presentation) {
-      console.error('setting presentation', presentation)
-      state.presentation = presentation
+    setPresentation(state, presentationChamps) {
+      console.error('setting presentation', presentationChamps)
+      state.presentationChamps = presentationChamps
     },
     setExperiences(state, experienceChamps) {
       console.error('setting experience', experienceChamps)

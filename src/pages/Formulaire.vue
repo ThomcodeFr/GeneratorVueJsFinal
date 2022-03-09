@@ -32,14 +32,14 @@ export default {
   },
 
   computed: {
-    ...mapState(['presentation']),
+    ...mapState(['presentationChamps']),
     ...mapState(['experienceChamps']),
     ...mapState(['formations']),
     ...mapState(['competences']),
   },
 
   watch: {
-    presentation: function (nouvellePresentation) {
+    presentationChamps: function (nouvellePresentation) {
       if (nouvellePresentation != '') {
         this.formContent = 'experiences'
       }
