@@ -42,6 +42,7 @@ export default {
 
   methods: {
     ...mapMutations(['setPresentation']),
+
     nextPresentation() {
       if (
         !this.presentationFirstName &&

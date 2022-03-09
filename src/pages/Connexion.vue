@@ -3,8 +3,9 @@
 
   <section id="connexionStyle">
     <div class="background">
-        <input class="connectionPlacement" v-model="pseudo" placeholder="Entrez votre pseudo" /> <br />
+        <input class="connectionPlacement" id="login" v-model="pseudo" placeholder="Entrez votre pseudo" /> <br />
         <br />
+        <label for=""></label>
         <input
           type="password"
           v-model="password"
