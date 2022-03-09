@@ -13,8 +13,10 @@
       <label for="start">Date de fin</label><br />
       <input v-model="formationTabsNews.dateFinFormation" type="date"/>
       <br /> <br>
-      <button @click="saveFormation()">ajouter</button>
+      <button @click="saveFormation()">ajouter</button><br><br>
+      <button @click="nextFormation()">Suivant</button>
     </div>
+    <section class="saved_datas">
     <table>
       <thead>
         <tr>
@@ -31,6 +33,7 @@
         </tr>
       </tbody>
     </table>
+    </section>
   </div>
 </template>
 
@@ -61,4 +64,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.saved_datas {
+  text-align: center;
+}
+</style>

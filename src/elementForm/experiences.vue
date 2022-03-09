@@ -18,7 +18,7 @@
       placeholder="Entrez la description de vos missions"
     /><br /><br />
 
-    <button @click="saveExperience()">Suivant</button>
+    <button @click="nextExperience()">Suivant</button>
   </div>
 </template>
 
@@ -42,7 +42,7 @@ export default {
 
   methods: {
     ...mapMutations(['setExperiences']),
-    saveExperience() {
+    nextExperience() {
       if (
         !this.experienceName &&
         !this.experienceDateStart &&

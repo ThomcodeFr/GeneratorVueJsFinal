@@ -8,7 +8,7 @@
     />
     <br />
     <br />
-    <button @click="savePresentation()">Suivant</button>
+    <button @click="nextPresentation()">Suivant</button>
   </div>
 </template>
 
@@ -25,7 +25,7 @@ export default {
 
   methods: {
     ...mapMutations(['setPresentation']),
-    savePresentation() {
+    nextPresentation() {
       if (this.presentation == '') {
         alert('Le champs présentation ne peut pas être vide')
       } else {
