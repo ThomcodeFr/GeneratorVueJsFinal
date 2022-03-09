@@ -8,20 +8,13 @@
       <p>
         Conformément aux dispositions des articles 6-III et 19 de la Loi n°
         2004-575 du 21 juin 2004 pour la Confiance dans l'économie numérique,
-        dite L.C.E.N., nous portons à la connaissance des utilisateurs et
-        visiteurs du site : www.les-8-fantastiques.com les informations
+        dite L.C.E.N, nous portons à la connaissance des utilisateurs et
+        visiteurs du site : <span>www.les-8-fantastiques.com</span> les informations
         suivantes :
       </p>
       <h2>EDITEUR</h2>
       <p>
-        Le site www.les-8-fantastiques.com est la propriété exclusive de
-        SARL Les 8 Fantastiques, qui l'édite. SARL au capital de 37 000 € 06 24
-        83 81 88 21 Rue Jacobi Netter | 67200 Strasbourg
-        fantastiques.8@gmail.com Immatriculée au Registre du Commerce et des
-        Sociétés de 1234 sous le numéro : 216 704 825 00019 Numéro TVA
-        intracommunautaire : 8989 Directeur de la publication : Fadoua El
-        hannachi Contactez le responsable de la publication :
-        fadelhannachi@gmail.com
+        Le site <span>www.les-8-fantastiques.com</span> est la propriété exclusive de SARL Les 8 Fantastiques, qui l'édite. <br> SARL au capital de 37 000 € <br> 06 24 83 81 88 21 Rue Jacobi Netter | 67200 Strasbourg <br>fantastiques.8@gmail.com <br>Immatriculée au Registre du Commerce et des Sociétés de 1234 sous le numéro : 216 704 825 00019 <br> Numéro TVA intracommunautaire : 8989 <br>Directeur de la publication : Fadoua El hanna <br> Contactez le responsable de la publication : fadiaelhanna@fantastique.8.com
       </p>
 
       <h2>DONNÉES PERSONNELLES POLITIQUE DE CONFIDENTIALITÉ</h2>
@@ -91,5 +84,10 @@
 #mentionLegalStyle p {
   color: #fff;
   text-align: justify;
+}
+
+span {
+    color: rgb(193, 162, 109);
+    font-weight: bold;
 }
 </style>
